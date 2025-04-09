@@ -1,87 +1,101 @@
-* { /* css reset */
- margin: 0;
- padding: 0;
- box-sizing: border-box;
-}
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f5f5dc; /* beige color */
-  color: #333;
+/* CSS Reset */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f5dc; /* beige */
+  color: #333;
+  padding: 0 20px 40px;
+}
+
+/* Navigation */
 nav {
-  background-color: #e0e0d1; /* Light beige for navigation */
-  padding: 10px;
+  background-color: #dcdcc3;
+  padding: 15px 0;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ccc;
 }
 
 nav ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: center;
-}
-
-nav li {
-  margin: 0 15px;
+  gap: 30px; 
 }
 
 nav a {
   text-decoration: none;
   color: #333;
   font-weight: bold;
+  transition: color 0.3s;
 }
 
+nav a:hover {
+  color: #6b8e23;
+}
+
+/* Header */
 header {
-  background-color: #f0e5d8; /* A slightly different beige for the header */
-  padding: 20px;
+  background-color: #f0e5d8;
+  padding: 40px 20px;
   text-align: center;
+  border-radius: 10px;
+  margin-bottom: 30px;
 }
 
 h1 {
-  font-size: 2.5rem;
-  color: #2f4f4f; /* Darker color for heading */
+  font-size: 3rem;
+  color: #2f4f4f;
+  margin-bottom: 10px;
 }
 
 h2 {
   font-size: 2rem;
   color: #5a5a3f;
-}
-
-section#pet-gallery {
-  background-color: #f5f5f5; /* Light beige background for the gallery */
-  padding: 20px;
-}
-
-.pet {
-  background-color: #fafad2; /* Light beige for each pet section */
   margin-bottom: 20px;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Pet Gallery Section */
+section#pet-gallery {
+  background-color: #fdfdf5;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+/* Pet Cards */
+.pet {
+  background-color: #fafad2;
+  margin-bottom: 25px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .pet img {
   width: 100%;
   max-width: 300px;
-  border-radius: 8px;
-  margin-bottom: 10px;
+  display: block;
+  margin: 0 auto 15px;
+  border-radius: 10px;
 }
 
 .pet h3 {
   font-size: 1.8rem;
   color: #6b8e23;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .pet p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #4b4b2f;
   line-height: 1.6;
-}
-
-/* Add some spacing at the bottom */
-body {
-  padding-bottom: 20px;
+  text-align: center;
 }
